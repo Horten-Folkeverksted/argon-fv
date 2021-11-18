@@ -4,4 +4,4 @@ email    robin@smidsrod.no
 date     2021-11-18
 name     Argon FV Template
 desc     Argon FV - clean, responsive, modern template for Dokuwiki.
-url      https://www.dokuwiki.org/template:argon
+url      https://github.com/Horten-Folkeverksted/argon-fv
