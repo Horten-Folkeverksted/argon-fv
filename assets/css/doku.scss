@@ -60,6 +60,9 @@ select {
     flex-direction: column;
 }
 
+.bg-primary {
+    background-color: #17b571 !important;
+}
 
 // ------ Main Content ------
 
@@ -186,7 +189,7 @@ select {
         display: inline;
         fill: #6c757d;
         :hover {
-            fill:#525f7f;
+            fill:#285e5c;
         }
     }
 
@@ -246,7 +249,7 @@ textarea {
         }
 
         a:hover {
-            color: #5e72e4;
+            color: #17b571;
             text-decoration: none;
         }
 
@@ -569,7 +572,7 @@ textarea {
     }
 
     a:hover {
-        color: #212529;
+        color: #252921;
     }
 
 }
@@ -600,7 +603,7 @@ textarea {
             fill: #6c757d;
 
             :hover {
-                fill: #525f7f;
+                fill: #285e5c;
             }
         }
 

@@ -58,7 +58,7 @@ Coded by www.creative-tim.com
   --default: #172b4d;
   --white: #fff;
   --neutral: #fff;
-  --darker:black;
+  --darker: black;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -5873,14 +5873,14 @@ input[type=button].btn-block {
 
 .card > .list-group:first-child, #dw__login > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 0.0625rem);
-  border-top-right-radius: calc(0.25rem - 0.0625rem);
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
 }
 
 .card > .list-group:last-child, #dw__login > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 0.0625rem);
-  border-bottom-left-radius: calc(0.25rem - 0.0625rem);
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem;
 }
 
 .card-body {
@@ -5918,7 +5918,7 @@ input[type=button].btn-block {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 0.0625rem) calc(0.25rem - 0.0625rem) 0 0;
+  border-radius: 0.1875rem 0.1875rem 0 0;
 }
 
 .card-header + .list-group .list-group-item:first-child {
@@ -5932,7 +5932,7 @@ input[type=button].btn-block {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 0.0625rem) calc(0.25rem - 0.0625rem);
+  border-radius: 0 0 0.1875rem 0.1875rem;
 }
 
 .card-header-tabs {
@@ -5965,14 +5965,14 @@ input[type=button].btn-block {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 0.0625rem);
-  border-top-right-radius: calc(0.25rem - 0.0625rem);
+  border-top-left-radius: 0.1875rem;
+  border-top-right-radius: 0.1875rem;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 0.0625rem);
-  border-bottom-left-radius: calc(0.25rem - 0.0625rem);
+  border-bottom-right-radius: 0.1875rem;
+  border-bottom-left-radius: 0.1875rem;
 }
 
 .card-deck .card, .card-deck #dw__login {
@@ -16698,7 +16698,7 @@ main {
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(2) {
-  left: calc(50% + (var(--gutter) * 1.7));
+  left: calc(50% + var(--gutter) * 1.7);
   top: 50%;
 }
 
@@ -16713,22 +16713,22 @@ main {
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(5) {
-  left: calc(50% + (var(--gutter) * 3));
+  left: calc(50% + var(--gutter) * 3);
   top: 50%;
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(6) {
-  left: calc(50% + (var(--gutter) * 2.7));
-  top: calc(50% + (var(--gutter) * 1.5));
+  left: calc(50% + var(--gutter) * 2.7);
+  top: calc(50% + var(--gutter) * 1.5);
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(7) {
-  left: calc(50% + (var(--gutter) * 2.7));
-  top: calc(50% - (var(--gutter) * 1.5));
+  left: calc(50% + var(--gutter) * 2.7);
+  top: calc(50% - var(--gutter) * 1.5);
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(8) {
-  left: calc(50% - (var(--gutter) * 1.7));
+  left: calc(50% - var(--gutter) * 1.7);
   top: 50%;
 }
 
@@ -16743,18 +16743,18 @@ main {
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(11) {
-  left: calc(50% - (var(--gutter) * 4));
+  left: calc(50% - var(--gutter) * 4);
   top: 50%;
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(12) {
-  left: calc(50% - (var(--gutter) * 2.7));
-  top: calc(50% + (var(--gutter) * 1.5));
+  left: calc(50% - var(--gutter) * 2.7);
+  top: calc(50% + var(--gutter) * 1.5);
 }
 
 .section-nucleo-icons .icons-container.on-screen i:nth-child(13) {
-  left: calc(50% - (var(--gutter) * 2.7));
-  top: calc(50% - (var(--gutter) * 1.5));
+  left: calc(50% - var(--gutter) * 2.7);
+  top: calc(50% - var(--gutter) * 1.5);
 }
 
 @media (max-width: 991.98px) {
@@ -19324,7 +19324,7 @@ textarea[resize=horizontal] {
 }
 
 .has-success:after {
-  content: "";
+  content: "\ea26";
   color: daken(#2dce89, 18%);
   background-color: #69deac;
 }
@@ -19342,7 +19342,7 @@ textarea[resize=horizontal] {
 }
 
 .has-danger:after {
-  content: "";
+  content: "\ea53";
   color: daken(#fb6340, 18%);
   background-color: #fda08b;
 }
@@ -24729,6 +24729,10 @@ select {
   flex-direction: column;
 }
 
+.bg-primary {
+  background-color: #17b571 !important;
+}
+
 #dokuwiki__content p {
   font-weight: 400;
 }
@@ -24808,7 +24812,7 @@ select {
   fill: #6c757d;
 }
 .argon-doku-page-menu li :hover {
-  fill: #525f7f;
+  fill: #285e5c;
 }
 .argon-doku-page-menu li:nth-of-type(1) {
   margin-left: 0em;
@@ -24848,7 +24852,7 @@ textarea {
   font-size: 100%;
 }
 .ct-toc #dw__toc a:hover {
-  color: #5e72e4;
+  color: #17b571;
   text-decoration: none;
 }
 .ct-toc #dw__toc ol,
@@ -25033,7 +25037,7 @@ textarea {
   color: #4c555a;
 }
 .leftsidebar a:hover {
-  color: #212529;
+  color: #252921;
 }
 
 .ct-sidebar .nav > li > a, .ct-sidebar .leftsidebar .leftsidebar ul > li > a, .leftsidebar .leftsidebar .ct-sidebar ul > li > a {
@@ -25057,7 +25061,7 @@ textarea {
   fill: #6c757d;
 }
 .footer-card .argon-doku-footer-fullmenu li :hover {
-  fill: #525f7f;
+  fill: #285e5c;
 }
 .footer-card .argon-doku-footer-fullmenu li:nth-of-type(1) {
   margin-left: 0em;

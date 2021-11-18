@@ -8,6 +8,7 @@ if (!defined('DOKU_INC')) {
 $showTools = !tpl_getConf('hideTools') || (tpl_getConf('hideTools') && !empty($_SERVER['REMOTE_USER']));
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT == 'show');
 $showIcon = tpl_getConf('showIcon');
+$showOnlyIcon = tpl_getConf('showOnlyIcon');
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>">
@@ -56,7 +57,23 @@ $showIcon = tpl_getConf('showIcon');
 				class="navbar navbar-horizontal navbar-expand navbar-dark flex-row align-items-md-center ct-navbar bg-primary py-2">
 
 				<?php
-				if ($showIcon) {
+				if ($showOnlyIcon) {
+				?>
+					<div class="header-title">
+						<?php
+						// get logo either out of the template images folder or data/media folder
+						$logoSize = array();
+						$logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png', ':wiki:dokuwiki-128.png'), false, $logoSize);
+						// display logo and wiki title in a link to the home page
+						tpl_link(
+							wl(),
+							'<img src="'.$logo.'" alt="'.$conf['title'].'" />',
+							'accesskey="h" title="[H]"'
+						);
+						?>
+					</div>
+				<?php
+				} elseif ($showIcon) {
 				?>
 					<div class="header-title">
 						<?php

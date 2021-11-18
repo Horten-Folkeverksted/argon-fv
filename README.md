@@ -18,6 +18,8 @@ To do changes and have it compile live, do
 sass --watch assets/css/doku.scss assets/css/doku.css
 ```
 
+Use `sass` from https://github.com/sass/dart-sass/releases.
+
 ## Contributors
 
 - [IceWreck](https://github.com/IceWreck)
